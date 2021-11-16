@@ -1,0 +1,165 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SelectionSort</title>
+
+
+  <style>
+body {
+  background: #59C173;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  /* background: #c3cccc; */
+}
+.container {
+  padding: 50px;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+
+}
+.container p {
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: "sans";
+  text-align: center;
+}
+.line {
+  float: left;
+  display: inline;
+  list-style: none;
+}
+.line li {
+  float: left;
+  border: 1px solid grey;
+  border-right: 0px none;
+  padding: 20px;
+  cursor: pointer;
+}
+.line li:last-child {
+  border-right: 1px solid grey;
+}
+.line li {
+  background: #343436;
+  color: white;
+  transition: 500ms;
+}
+.line li:hover {
+  background: grey;
+  transition: 500ms;
+  border: 1px solid black;
+}
+.bb {
+  border: 1px solid lightgrey;
+  width: 80px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 200ms;
+}
+.bb:hover {
+  background: grey;
+  color: white;
+}
+.drawFrom {
+  position: relative;
+  background: red !important;
+  transition: 150ms;
+}
+.drawFrom:before {
+  content: "";
+  position: absolute;
+  top: -23px;
+  left: 23px;
+  border: 1px solid red;
+  height: 25px;
+  width: 0px;
+  padding: 0px;
+}
+.drawFrom:after {
+  content: "";
+  position: absolute;
+  border: 1px dashed red;
+  top: -25px;
+  left: 23px;
+  width: var(--width);
+  height: 0px;
+  transition: 150ms;
+}
+.drawTo {
+  position: relative;
+  background: red !important;
+}
+.drawTo:before {
+  content: "";
+  border: 1px solid red;
+  position: absolute;
+  top: -25px;
+  left: 25px;
+  height: 25px;
+}
+.match,
+.match:before,
+.match:after {
+  background: green !important;
+  border: 1px solid green;
+  transition: 100ms;
+}
+.credit{
+  padding:30px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+.credit a{
+  color:grey;
+  text-shadow:0px 0px 20px white;
+  text-decoration:none;
+  border-bottom:1px dotted grey;
+  padding-bottom:10px;
+  font-size:20px;
+}
+
+.dynamicin{
+  max-width: 400px;
+  margin: auto;
+padding: 60px;
+}
+  </style>
+  </head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <body>
+
+    <br>
+    <div class="dynamicin">
+    <textarea name="ta" id="" cols="50" rows="3"></textarea>
+    
+  <button type="button" id="but" onclick="addli()" class="btn btn-success">generate</button>
+    </div>
+    <div >
+    <div class='container'>
+        <p style="color: rgb(255, 255, 255);">Selection Sort: </p>
+        <ul class='line'>
+         
+        </ul>
+      </div>
+        <div class='container'>
+                  <button class='sSort bb' style="margin-top: 100px;">Sort</button>
+      </div>
+      </div>   
+      
+ 
+      <script src="script.js"></script>
+  </body>
+  </html> 
